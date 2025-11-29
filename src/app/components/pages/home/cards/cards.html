@@ -1,14 +1,52 @@
+<div class="container my-5">
+  <h2 class="text-center mb-4">Our Products</h2>
 
-<section class="cards-section">
-  <h2>Our Featured Perfumes</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
 
-  <div class="cards">
-    <div class="card" *ngFor="let item of products">
-      <img [src]="item.image" alt="perfume">
-      <h3>Golden Mist</h3>
-      <p>Warm amber & vanilla for evening charm.</p>
-      <span class="price">$110</span>
-      <button>Add to Cart</button>
+    <!-- Card 1 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?q=80&w=600" class="card-img-top" alt="Perfume 1">
+        <div class="card-body">
+          <h5 class="card-title">Royal Essence</h5>
+          <p class="card-text">A long-lasting fragrance with a warm and luxurious scent.</p>
+          <h6 class="text-success">Price: $49.99</h6>
+        </div>
+        <div class="card-footer text-center">
+          <button class="btn btn-primary">Buy Now</button>
+        </div>
+      </div>
     </div>
+
+    <!-- Card 2 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://images.unsplash.com/photo-1672848700906-2b8ca62639e4?q=80&w=600" class="card-img-top" alt="Perfume 2">
+        <div class="card-body">
+          <h5 class="card-title">Midnight Bloom</h5>
+          <p class="card-text">A floral scent perfect for evening wear with elegant tones.</p>
+          <h6 class="text-success">Price: $59.99</h6>
+        </div>
+        <div class="card-footer text-center">
+          <button class="btn btn-primary">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://images.unsplash.com/photo-1587304883224-b1b6e004a97a?q=80&w=600" class="card-img-top" alt="Perfume 3">
+        <div class="card-body">
+          <h5 class="card-title">Fresh Aura</h5>
+          <p class="card-text">A refreshing fragrance with citrus and natural notes.</p>
+          <h6 class="text-success">Price: $39.99</h6>
+        </div>
+        <div class="card-footer text-center">
+          <button class="btn btn-primary">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
   </div>
-   
+</div>

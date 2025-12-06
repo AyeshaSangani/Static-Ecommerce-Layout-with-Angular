@@ -1,76 +1,27 @@
-
 <div class="container p-5">
 
-    <h2 class="text-center"><b><u>FEATURED PERFUMES</u></b></h2>
+  <h2 class="text-center"><b><u>FEATURED PRODUCT</u></b></h2>
 
-    <form>
-        <div class="search d-flex">
-            <input type="text" class="m-2 p-3 form-control border border-secondary" placeholder="Search any perfume">
-            <button class="btn btn-dark text-light">Search</button>
-        </div>
-    </form>
-
-    <div class="all-cards p-5 row justify-content-center">
-
-        <div class="card p-3 m-2" style="width: 18rem;">
-            <img src="https://images.unsplash.com/photo-1700473170883-47612d466783?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Perfume">
-            <div class="card-body">
-                <h5 class="card-title"><b><i>Dior Sauvage Eau De Parfum</i></b></h5>
-                <p class="card-text text-info"><b>Rs. 3499.00</b></p>
-
-                <a href="#" class="btn btn-dark">Add to Cart</a>
-            </div>
-        </div>
-
-        <div class="card p-3 m-2 " style="width: 18rem;">
-            <img src="https://images.unsplash.com/photo-1588680500419-e221b3c15dd6?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Perfume">
-            <div class="card-body">
-                <h5 class="card-title"><b><i>Versace Eros Flame</i></b></h5>
-                <p class="card-text text-info"><b>Rs. 2999.00</b></p>
-
-                <a href="#" class="btn btn-dark">Add to Cart</a>
-            </div>
-        </div>
-
-        <div class="card p-3 m-2 " style="width: 18rem;">
-            <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Perfume">
-            <div class="card-body">
-                <h5 class="card-title"><b><i>Chanel Bleu <br> De Chanel</i></b></h5>
-                <p class="card-text text-info"><b>Rs. 3799.00</b></p>
-
-                <a href="#" class="btn btn-dark">Add to Cart</a>
-            </div>
-        </div>
-
-        <div class="card p-3 m-2 " style="width: 18rem;">
-            <img src="https://images.unsplash.com/photo-1611842834129-f1f92390f9e7?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Perfume">
-            <div class="card-body">
-                <h5 class="card-title"><b><i>Armani Code <br> Profumo</i></b></h5>
-                <p class="card-text text-info"><b>Rs. 3299.00</b></p>
-
-                <a href="#" class="btn btn-dark">Add to Cart</a>
-            </div>
-        </div>
-
-        <div class="card p-3 m-2 " style="width: 18rem;">
-            <img src="https://images.unsplash.com/photo-1635796353041-9215878d903e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Perfume">
-            <div class="card-body">
-                <h5 class="card-title"><b><i>Gucci Guilty Pour Homme</i></b></h5>
-                <p class="card-text text-info"><b>Rs. 2899.00</b></p>
-
-                <a href="#" class="btn btn-dark">Add to Cart</a>
-            </div>
-        </div>
-
-        <div class="card p-3 m-2 " style="width: 18rem;">
-            <img src="https://images.unsplash.com/photo-1638551442447-085a2d42918f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Perfume">
-            <div class="card-body">
-                <h5 class="card-title"><b><i>Hugo Boss <br> The Scent</i></b></h5>
-                <p class="card-text text-info"><b>Rs. 2599.00</b></p>
-
-                <a href="#" class="btn btn-dark">Add to Cart</a>
-            </div>
-        </div>
-
+  <form>
+    <div class="search d-flex">
+      <input type="text" class="m-2 p-3 form-control border border-secondary" placeholder="Search any product">
+      <button class="btn btn-warning text-dark">Search</button>
     </div>
+  </form>
+
+  <div class="all-cards p-5 row justify-content-center">
+
+    <div class="col-md-4 mb-4" *ngFor="let card of cards">
+      <div class="card p-3 h-100">
+        <img [src]="card.image" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title"><b><i>{{card.title}}</i></b></h5>
+          <p class="card-text text-info"><b>$<span>{{card.price}}</span></b></p>
+          <a href="#" class="btn btn-warning">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
 </div>

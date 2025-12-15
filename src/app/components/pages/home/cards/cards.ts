@@ -15,7 +15,7 @@ export class Cards {
   cards = [
 
     {
-      title: "Chopard Whatch",
+      title: "Chopard Watch",
       price: "2999",
       image: "https://images.unsplash.com/photo-1689372828184-fff989d6a553?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
@@ -48,7 +48,8 @@ export class Cards {
       title: "Rolex Submariner 126613LB",
       price: "7500",
       image: "https://images.unsplash.com/photo-1670404160620-a3a86428560e?q=80&w=725&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    }
+    },
+
 
   ]
 

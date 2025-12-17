@@ -1,0 +1,83 @@
+/* Main Navbar Background */
+.custom-navbar {
+  background: linear-gradient(90deg, #181717, #353434);
+  padding: 20px 25px !important;
+  box-shadow: 0 4px 20px rgba(63, 63, 63, 0.6);
+  border-bottom: 3px solid #ffc107;
+}
+
+/* Brand */
+.custom-navbar .navbar-brand {
+  color: #fff !important;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+
+/* Nav Links */
+.custom-navbar .nav-link {
+  color: rgba(255, 255, 255, 0.85) !important;
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  
+}
+
+/* Dropdown Menu */
+.custom-navbar .dropdown-menu {
+  background: #111 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.custom-navbar .dropdown-item {
+  color: rgba(255,255,255,0.85) !important;
+}
+
+.custom-navbar .dropdown-item:hover {
+  background: rgba(255,255,255,0.1) !important;
+  color: #ffffff !important;
+}
+
+/* Search Bar */
+.custom-navbar .form-control {
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.custom-navbar .form-control::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.custom-navbar .form-control:focus {
+  border-color: #ffc107;
+  box-shadow: 0 0 0 2px rgba(255,193,7,0.3);
+}
+
+/* Subscribe Button */
+.custom-navbar .btn-outline-warning {
+  border-color: #ffc107;
+  color: #ffc107;
+}
+
+.custom-navbar .btn-outline-warning:hover {
+  background: #ffc107;
+  color: #000;
+}
+
+/* Toggler (Mobile Menu Button) */
+.custom-navbar .navbar-toggler {
+  border-color: rgba(255,255,255,0.3) !important;
+}
+
+.custom-navbar .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+form i {
+  color: #ffffff;
+}

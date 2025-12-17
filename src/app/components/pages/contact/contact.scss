@@ -1,0 +1,39 @@
+.contact-hero {
+  background-image: url('https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 60vh;
+  position: relative;
+}
+
+/* Dark overlay */
+.contact-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.contact-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-hero h1 {
+  font-size: 2.8rem;
+  letter-spacing: 1px;
+}
+
+.contact-hero p {
+  font-size: 1.05rem;
+  max-width: 650px;
+  margin: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-hero h1 {
+    font-size: 2.1rem;
+  }
+}

@@ -1,0 +1,65 @@
+.watch-carousel img {
+    height: 85vh;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(75%);
+}
+
+/* Carousel text position */
+.carousel-caption {
+    bottom: 30%;
+}
+
+.carousel-caption h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .watch-carousel img {
+        height: 55vh;
+    }
+    .carousel-caption {
+        bottom: 15%;
+    }
+    .carousel-caption h1 {
+        font-size: 1.8rem;
+    }
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+}
+
+/* Reduce carousel width while keeping responsive */
+#carouselExampleIndicators {
+  max-height: 70%;
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.carousel-inner img {
+  filter: brightness(70%) contrast(110%);
+}
+
+/* Reduce carousel height */
+#carouselExampleIndicators img {
+  height: 70vh;        /* desktop height */
+  object-fit: cover;
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+  #carouselExampleIndicators img {
+    height: 50vh;     /* mobile height */
+  }
+}
+
+#carouselExampleIndicators img {
+  filter: brightness(70%) contrast(110%);
+}

@@ -1,4 +1,4 @@
-<app-navbar></app-navbar>
+<app-navbar> </app-navbar>
 
 <div class="contact-hero d-flex align-items-center text-center">
   <div class="container">
@@ -6,6 +6,83 @@
     <p class="text-white mt-3">
       We’re here to assist you with any questions, orders, or support you need.
     </p>
+    <a href="tel:+923373210892" class="btn btn-outline-light mt-4 px-5 fw-bold">
+      Call Now
+    </a>
+
+  </div>
+</div>
+
+<!-- LOGIN / SIGNUP SECTION -->
+
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-6">
+
+      <div class="auth-box p-4">
+
+        <!-- Tabs -->
+
+        <ul class="nav nav-pills mb-4 justify-content-center">
+          <li class="nav-item">
+            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#login">
+              Login
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#signup">
+              Sign Up
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+
+          <!-- LOGIN FORM -->
+
+          <div class="tab-pane fade show active" id="login">
+            <form>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email Address">
+              </div>
+
+              <div class="mb-3">
+                <input type="password" class="form-control" placeholder="Password">
+              </div>
+
+              <button class="btn btn-warning w-100 fw-bold">Login</button>
+            </form>
+          </div>
+
+          <!-- SIGNUP FORM -->
+
+          <div class="tab-pane fade" id="signup">
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Full Name">
+              </div>
+
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email Address">
+              </div>
+
+              <div class="mb-3">
+                <input type="password" class="form-control" placeholder="Password">
+              </div>
+
+              <div class="mb-3">
+                <input type="password" class="form-control" placeholder="Confirm Password">
+              </div>
+
+              <button class="btn btn-warning w-100 fw-bold">Create Account</button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
   </div>
 </div>
 

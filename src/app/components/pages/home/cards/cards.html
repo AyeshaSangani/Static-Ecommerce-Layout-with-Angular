@@ -4,20 +4,20 @@
 
   <form>
     <div class="search d-flex">
-      <input type="text" class="m-2 p-3 form-control border border-secondary" placeholder="Search any product" [(ngModel)]="searchText" name="search">
-      <button class="btn btn-warning text-dark">Search</button>
+      <input type="text" class="m-2 p-3 form-control w-100 w-md-50 border border-secondary" placeholder="Search any product" [(ngModel)]="searchText" name="search">
+      <!-- <button class="btn btn-warning text-dark">Search</button> -->
     </div>
   </form>
 
-  <div class="all-cards p-5 row justify-content-center">
+  <div class="all-cards p-5 mb-2 row justify-content-center">
 
-    <div class="col-md-4 mb-4" *ngFor="let card of filteredCards">
-      <div class="card p-3 h-100">
+    <div class="col-12 col-sm-6 col-md-4 mb-4" *ngFor="let card of filteredCards" >
+      <div class="card p-3">
         <img [src]="card.image" class="card-img-top" alt="">
-        <div class="card-body">
+        <div class="card-body w-80">
           <h5 class="card-title"><b><i>{{card.title}}</i></b></h5>
           <p class="card-text text-info"><b>$<span>{{card.price}}</span></b></p>
-          <a href="#" class="btn btn-warning ">Add to Cart</a>
+          <a href="https://wa.link/p57147" class="btn btn-warning " target="_blank"> Add to Cart <i class="fa-brands fa-whatsapp"></i> </a>
         </div>
       </div>
     </div>
